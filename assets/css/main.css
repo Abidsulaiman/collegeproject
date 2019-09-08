@@ -1,0 +1,286 @@
+:root {
+    --primary-color: #0c39b8;
+    --top-bar-color: #080c4e;
+    --light-blue: rgb(240, 247, 248);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    color: rgb(36, 36, 36);
+}
+
+a:hover {
+    color: #000;
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+
+.topbar {
+    background: var(--top-bar-color);
+}
+
+.text-primary{
+    color: #080c4e!important;
+}
+.text-warning{
+    color: #ff8c00!important;
+}
+a.text-warning:focus, a.text-warning:hover {
+    color: #ff8c00!important;
+    text-decoration: underline;
+}
+
+.bg-warning{
+    background: #ff8c00!important;
+}
+a.bg-warning:focus, a.bg-warning:hover, button.bg-warning:focus, button.bg-warning:hover {
+    background-color: #ff8c00!important;
+    transition: all ease .2s;
+}
+
+
+.bg-primary {
+    background: var(--secondary-color);
+}
+
+.bg-secondary {
+    background: var(--primary-color)!important;
+}
+
+.br-bt-5 {
+    border-bottom: 5px solid var(--secondary-color);
+}
+
+.v-centered {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text-shadow {
+    text-shadow: 2px 3px 8px black;
+}
+
+.bdr-4 {
+    border-radius: 4px;
+}
+
+.shadow {
+    box-shadow: 0 4px 40px 0 rgba(77, 94, 126, 0.1)!important;
+}
+
+.light-blue {
+    transition: all ease .5s;
+    background: var(--light-blue);
+}
+
+.card {
+    border: none;
+    box-shadow: 0 4px 40px 0 rgba(77, 94, 126, 0.1);
+    overflow: hidden;
+}
+
+.btn-primary {
+    background: var(--primary-color);
+}
+
+/* header */
+
+.main-slider {
+    overflow: hidden
+}
+
+.sidebar-inner .nav-link {
+    padding: .5rem 2rem;
+}
+
+.sidebar-inner>ul>.nav-item:first-child {
+    padding-top: 1rem;
+}
+
+.sidebar-inner {
+    border-radius: 4px;
+}
+
+.sidebar-inner .nav-link.active{
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.form-control:focus {
+    box-shadow: none;
+}
+
+#carouselExampleControls{
+    height: 240px;
+}
+
+.carousel-item {
+    position: relative;
+}
+
+.carousel-item::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    content: '';
+}
+
+.carousel-caption {
+    position: absolute;
+    right: 15%;
+    top: 50%;
+    left: 15%;
+    z-index: 10;
+    padding-top: 0;
+    color: #fff;
+    text-align: center;
+    transform: translateY(-50%);
+}
+
+.card-header {
+    position: relative;
+}
+
+.gallery-icon {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: auto;
+    height: 20px;
+}
+
+.listing-item .card-header {
+    height: 110px;
+    background: #fff;
+    border: none;
+    position: relative;
+}
+
+.listing-item .card-header img {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+}
+
+.listing-item .card-header .img-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 110px;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+.data-icon {
+    margin-right: 10px;
+    font-weight: 700;
+    text-decoration: none;
+    display: block;
+    z-index: 1;
+    color: #fff;
+    position: relative;
+    float: left;
+    line-height: 1;
+    padding-left: 20px;
+}
+
+.data-icon i {
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    display: block;
+    float: left;
+    height: 15px;
+    width: 15px;
+}
+
+.clg-profile-img {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    width: 60px;
+    height: 60px;
+    border: 5px solid #fff;
+    padding: 10px;
+    z-index: 2;
+    border-radius: 2px;
+}
+
+.card-footer a {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.university-block {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 120px;
+    height: 50px;
+    z-index: 10;
+    font-size: 10px;
+    color: #fff;
+}
+
+.college-title{
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
+    z-index: 10;
+}
+
+.college-title h6{
+    font-weight: 600;
+    color: #fff;
+}
+
+.course-fee{
+    display: inline-block;
+    width: 33.3333333333%;
+    text-align: left;
+    padding-left: 7px;
+}
+
+.course-fee span{
+    font-size: 10px;
+}
+.bottom-menu{    
+    padding-bottom: 5px;
+}
+.bottom-menu a{
+    font-weight: 500;
+    font-size: 10px;
+    color: #fff;
+    line-height: 1;
+    margin-right: 6px;
+}
+
+@media (min-width: 991px) {
+    
+}
+
+@media (min-width:1300px) {
+    .container {
+        max-width: 1280px
+    }
+}
