@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://picturepan2.github.io/devices.css/dist/devices.css">
     <link rel="stylesheet" href="assets/fonts/css/all.min.css">
+
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
 
@@ -110,139 +111,146 @@
     <section class="main-wrapper pb-4">
         <div class="container">
             <div class="row">
-                <div class="col-2 pr-lg-0 collapse d-md-flex" id="sidebar">
-                    <div class="w-100 sidebar-inner shadow bg-white">
-                        <ul class="nav flex-column flex-nowrap">
-                            <li class="nav-item">
-                                <a class="nav-link active collapsed" href="#university" data-toggle="collapse"
-                                    data-target="#university" aria-controls="university">
-                                    <i class="fas fa-school text-warning mr-2 d-inline-block"></i>
-                                    All Universities
-                                </a>
-                                <div class="collapse" id="university" aria-expanded="false">
-                                    <ul class="flex-column pl-2 nav">
-                                        <li class="nav-item"><a class="nav-link py-0" href="#">Orders</a></li>
-                                        <li class="nav-item">
-                                            <a class="nav-link collapsed py-1" href="#submenu1sub1"
-                                                data-toggle="collapse" data-target="#submenu1sub1">Customers</a>
-                                            <div class="collapse" id="submenu1sub1" aria-expanded="false">
-                                                <ul class="flex-column nav pl-4">
-                                                    <li class="nav-item">
-                                                        <a class="nav-link p-1" href="#">
-                                                            <i class="fa fa-fw text-warning fa-clock"></i> Daily
-                                                        </a>
-                                                    </li>
-                                                    <li class="nav-item">
-                                                        <a class="nav-link p-1" href="#">
-                                                            <i class="fa fa-fw text-warning fa-dashboard"></i> Dashboard
-                                                        </a>
-                                                    </li>
-                                                    <li class="nav-item">
-                                                        <a class="nav-link p-1" href="#">
-                                                            <i class="fa fa-fw text-warning fa-bar-chart"></i> Charts
-                                                        </a>
-                                                    </li>
-                                                    <li class="nav-item">
-                                                        <a class="nav-link p-1" href="#">
-                                                            <i class="fa fa-fw text-warning fa-compass"></i> Areas
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </li>
-                                    </ul>
+                <div class="wrapper-content-left">
+                    <!-- left-side -->
+                    <div class="card">
+                        <div class="card-header bg-white">
+                            <h5 class="mb-0 font-weight-bold">Filters</h5>
+                        </div>
+                        <div class="card-body">
+                            <p>Categories</p>
+                            <ul class="list-unstyled mt-2 mb-0">
+                                <li>
+                                    <input type="checkbox" name="" id="">
+                                    <label for="University ABC">University ABC</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="" id="">
+                                    <label for="University ABC">University ABC</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="" id="">
+                                    <label for="University ABC">University ABC</label>
+                                </li>
+                            </ul>
+                            <hr>
+                            <p>Universities</p>
+                            <ul class="list-unstyled mt-2 mb-0">
+                                <li>
+                                    <input type="checkbox" name="" id="">
+                                    <label for="University ABC">University ABC</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="" id="">
+                                    <label for="University ABC">University ABC</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="" id="">
+                                    <label for="University ABC">University ABC</label>
+                                </li>
+                            </ul>
+                            <hr>
+                            <p>Colleges</p>
+                            <ul class="list-unstyled mt-2 mb-0">
+                                <li>
+                                    <input type="checkbox" name="" id="">
+                                    <label for="University ABC">123 Colleges</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="" id="">
+                                    <label for="University ABC">123 Colleges</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="" id="">
+                                    <label for="University ABC">123 Colleges</label>
+                                </li>
+                            </ul>
+                            <hr>
+                            <p>Places</p>
+                            <ul class="list-unstyled mt-2 mb-0">
+                                <li>
+                                    <input type="checkbox" name="" id="">
+                                    <label for="University ABC">123 Colleges</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="" id="">
+                                    <label for="University ABC">123 Colleges</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="" id="">
+                                    <label for="University ABC">123 Colleges</label>
+                                </li>
+                            </ul>
+                            <hr>
+                            <p>Rating</p>
+                            <ul class="list-unstyled mt-2 mb-0">
+                                <li>
+                                    <input type="checkbox" name="" id="">
+                                    <label for="five-star">5 &#9733;</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="" id="">
+                                    <label for="four-star-above">4 &#9733; & Above</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="" id="">
+                                    <label for="three-star-above">3 &#9733; & Above</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="" id="">
+                                    <label for="two-star-above">2 &#9733; & Above</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="" id="">
+                                    <label for="below-one-star">1 &#9733; & Above</label>
+                                </li>
+                            </ul>
+                            <hr>
+                            <p>Fee Range</p>
+                            <form>
+                                <div class="form-group">
+                                    <label for="formControlRange">1,00,000 - 10,00000</label>
+                                    <input type="range" class="form-control-range" id="formControlRange">
                                 </div>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link collapsed" href="#colleges" data-toggle="collapse"
-                                    data-target="#colleges" aria-controls="colleges">
-                                    <i class="fas fa-school text-warning mr-2 d-inline-block"></i>
-                                    All Colleges
-                                </a>
-                                <div class="collapse" id="colleges" aria-expanded="false">
-                                    <ul class="flex-column pl-2 nav">
-                                        <li class="nav-item"><a class="nav-link py-0" href="#">Orders</a></li>
-                                        <li class="nav-item">
-                                            <a class="nav-link collapsed py-1" href="#submenu2sub2"
-                                                data-toggle="collapse" data-target="#submenu2sub2">Customers</a>
-                                            <div class="collapse" id="submenu2sub2" aria-expanded="false">
-                                                <ul class="flex-column nav pl-4">
-                                                    <li class="nav-item">
-                                                        <a class="nav-link p-1" href="#">
-                                                            <i class="fa fa-fw text-warning fa-clock"></i> Daily
-                                                        </a>
-                                                    </li>
-                                                    <li class="nav-item">
-                                                        <a class="nav-link p-1" href="#">
-                                                            <i class="fa fa-fw text-warning fa-dashboard"></i> Dashboard
-                                                        </a>
-                                                    </li>
-                                                    <li class="nav-item">
-                                                        <a class="nav-link p-1" href="#">
-                                                            <i class="fa fa-fw text-warning fa-bar-chart"></i> Charts
-                                                        </a>
-                                                    </li>
-                                                    <li class="nav-item">
-                                                        <a class="nav-link p-1" href="#">
-                                                            <i class="fa fa-fw text-warning fa-compass"></i> Areas
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">
-                                    <i class="fas fa-book text-warning mr-2 d-inline-block"></i>
-                                    Courses
-                                </a>
-                            </li>
-                        </ul>
+                            </form>
+                        </div>
                     </div>
                 </div>
-                <div class="col rightside pr-lg-0">
-                    <div class="main-slider bdr-4">
-                        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img class="d-block w-100" src="assets/img/01.jpg" alt="First slide">
-                                    <div class="carousel-caption d-none d-md-block">
-                                        <h3>First slide label</h3>
-                                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <img class="d-block w-100" src="assets/img/02.jpg" alt="Second slide">
-                                    <div class="carousel-caption d-none d-md-block">
-                                        <h3>Second slide label</h3>
-                                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <img class="d-block w-100" src="assets/img/01.jpg" alt="Third slide">
-                                    <div class="carousel-caption d-none d-md-block">
-                                        <h3>Third slide label</h3>
-                                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                <div class="col wrapper-content-right">
+                    <!-- right-side -->
+                    <div class="liisting">
+                        <div class="row mb-3">
+                            <div class="col-lg-12">
+                                <div class="listing-filter-tags bg-white p-2">
+                                    <a href="#" class="d-inline-block">
+                                        Management <i class="fas fa-check-circle"></i>
+                                    </a>
+                                    <a href="#" class="d-inline-block">
+                                        Management <i class="fas fa-check-circle"></i>
+                                    </a>
+                                    <span class="more-tags p-2">20more</span>
+                                    <div class="sort-filter">
+                                        <div class="nestedSort">
+                                            <ul class="nav nav-pills" id="sort_list" aria-labelledby="dropdownMenu">
+                                                <li><a href="javascript:void(0)" class="disabled"><strong>Sort
+                                                            By</strong></a></li>
+                                                <li id="popularity" class="selected"><a
+                                                        href="javascript:void(0)">Popularity</a></li>
+                                                <li id="rating" class=""><a href="javascript:void(0)">Reviews Rating</a>
+                                                </li>
+                                                <li id="fees_desc" class=""><a href="javascript:void(0)">Highest
+                                                        Fees</a>
+                                                </li>
+                                                <li id="fees_asc" class=""><a href="javascript:void(0)">Lowest Fees</a>
+                                                </li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <a class="carousel-control-prev" href="#carouselExampleControls" role="button"
-                                data-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Previous</span>
-                            </a>
-                            <a class="carousel-control-next" href="#carouselExampleControls" role="button"
-                                data-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Next</span>
-                            </a>
                         </div>
-                    </div>
-                    <div class="liisting mt-3">
                         <div class="row justify-content-center">
-                            <div class="col-lg-4">
+                            <div class="col-lg-4 mb-3">
                                 <div class="listing-item card shadow">
                                     <div class="card-header">
                                         <img src="assets/img/01.jpg" alt="" width="100%" height="100%">
@@ -323,7 +331,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4">
+                            <div class="col-lg-4 mb-3">
                                 <div class="listing-item card shadow">
                                     <div class="card-header">
                                         <img src="assets/img/01.jpg" alt="" width="100%" height="100%">
@@ -404,7 +412,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4">
+                            <div class="col-lg-4 mb-3">
                                 <div class="listing-item card shadow">
                                     <div class="card-header">
                                         <img src="assets/img/01.jpg" alt="" width="100%" height="100%">
@@ -484,6 +492,10 @@
                                         </div>
                                     </div>
                                 </div>
+                            </div>
+                            <div class="col-lg-4 text-center mt-4 mb-4">
+                                <a href="#" class="btn bg-warning w-100 border-0 text-white font-weight-bold">Load
+                                    More</a>
                             </div>
                         </div>
                     </div>
@@ -492,110 +504,8 @@
         </div>
     </section>
 
-    <section class="pb-5" id="findOut">
-        <div class="container">
-            <div class="row mt-5 justify-content-center">
-                <div class="col-lg-6 text-center">
-                    <h3 class="display-4 font-weight-bold">
-                        Find out!
-                    </h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </div>
-            </div>
-            <div class="row mt-5">
-                <div class="col-lg-3 text-center mb-5">
-                    <a href="#">
-                        <div class="card shadow ml-lg-4 mr-lg-4">
-                            <div class="card-body">
-                                <img src="assets/img/college.svg" width="130" class="mx-auto" alt="">
-                                <h3>Best Colleges</h3>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-3 text-center mb-5">
-                    <a href="#">
-                        <div class="card shadow ml-lg-4 mr-lg-4">
-                            <div class="card-body">
-                                <img src="assets/img/exam.svg" width="130" class="mx-auto" alt="">
-                                <h3>Exams</h3>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-3 text-center mb-5">
-                    <a href="#">
-                        <div class="card shadow ml-lg-4 mr-lg-4">
-                            <div class="card-body">
-                                <img src="assets/img/admission.svg" width="130" class="mx-auto" alt="">
-                                <h3>Admission</h3>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-3 text-center mb-5">
-                    <a href="#">
-                        <div class="card shadow ml-lg-4 mr-lg-4">
-                            <div class="card-body">
-                                <img src="assets/img/college.svg" width="130" class="mx-auto" alt="">
-                                <h3>Exam Dates</h3>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-3 text-center mb-5">
-                    <a href="#">
-                        <div class="card shadow ml-lg-4 mr-lg-4">
-                            <div class="card-body">
-                                <img src="assets/img/college.svg" width="130" class="mx-auto" alt="">
-                                <h3>Top Reviews</h3>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-3 text-center mb-5">
-                    <a href="#">
-                        <div class="card shadow ml-lg-4 mr-lg-4">
-                            <div class="card-body">
-                                <img src="assets/img/exam.svg" width="130" class="mx-auto" alt="">
-                                <h3>Latest News</h3>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-3 text-center mb-5">
-                    <a href="#">
-                        <div class="card shadow ml-lg-4 mr-lg-4">
-                            <div class="card-body">
-                                <img src="assets/img/college.svg" width="130" class="mx-auto" alt="">
-                                <h3>Top Courses</h3>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-3 text-center mb-5">
-                    <a href="#">
-                        <div class="card shadow ml-lg-4 mr-lg-4">
-                            <div class="card-body">
-                                <img src="assets/img/college.svg" width="130" class="mx-auto" alt="">
-                                <h3>Blog</h3>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
 
-
+    <!-- footer -->
     <footer class="pt-2 pb-2 bg-dark">
         <div class="container">
             <div class="row">

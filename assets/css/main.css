@@ -30,25 +30,27 @@ body {
     background: var(--primary-color);
 }
 
-.text-primary{
+.text-primary {
     color: #080c4e!important;
 }
-.text-warning{
+
+.text-warning {
     color: #ff8c00!important;
 }
+
 a.text-warning:focus, a.text-warning:hover {
     color: #ff8c00!important;
     text-decoration: underline;
 }
 
-.bg-warning{
+.bg-warning {
     background: #ff8c00!important;
 }
+
 a.bg-warning:focus, a.bg-warning:hover, button.bg-warning:focus, button.bg-warning:hover {
     background-color: #ff8c00!important;
     transition: all ease .2s;
 }
-
 
 .bg-primary {
     background: var(--secondary-color);
@@ -113,7 +115,7 @@ a.bg-warning:focus, a.bg-warning:hover, button.bg-warning:focus, button.bg-warni
     border-radius: 4px;
 }
 
-.sidebar-inner .nav-link.active{
+.sidebar-inner .nav-link.active {
     background: rgba(0, 0, 0, 0.1);
 }
 
@@ -121,7 +123,7 @@ a.bg-warning:focus, a.bg-warning:hover, button.bg-warning:focus, button.bg-warni
     box-shadow: none;
 }
 
-#carouselExampleControls{
+#carouselExampleControls {
     height: 240px;
 }
 
@@ -149,6 +151,10 @@ a.bg-warning:focus, a.bg-warning:hover, button.bg-warning:focus, button.bg-warni
     color: #fff;
     text-align: center;
     transform: translateY(-50%);
+}
+
+.wrapper-content-left{
+    width: 26%;
 }
 
 .card-header {
@@ -241,47 +247,82 @@ a.bg-warning:focus, a.bg-warning:hover, button.bg-warning:focus, button.bg-warni
     color: #fff;
 }
 
-.college-title{
+.college-title {
     position: absolute;
     bottom: 5px;
     left: 10px;
     z-index: 10;
 }
 
-.college-title h6{
+.college-title h6 {
     font-weight: 600;
     color: #fff;
 }
 
-.course-fee{
+.course-fee {
     display: inline-block;
     width: 33.3333333333%;
     text-align: left;
     padding-left: 7px;
 }
 
-.course-fee span{
+.course-fee span {
     font-size: 10px;
 }
-.bottom-menu{    
+
+.bottom-menu {
     padding-bottom: 5px;
 }
-.bottom-menu a{
+
+.bottom-menu a {
     font-weight: 500;
     font-size: 10px;
     color: #fff;
     line-height: 1;
     margin-right: 6px;
 }
-#findOut .card{
+
+#findOut .card {
     transform: scale(1);
     transition: all ease .5s;
 }
-#findOut .card:hover{
+
+#findOut .card:hover {
     transform: scale(1.06);
 }
 
-@media (max-width:991px){
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"] + label::before {
+    width: 15px;
+    height: 15px;
+    border-radius: 2px;
+    border: 2px solid #ff8c00;
+    background-color: #fff;
+    display: block;
+    content: "";
+    float: left;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+input[type="checkbox"]:checked + label::before {
+    box-shadow: inset 0px 0px 0px 3px #fff;
+    background-color: #ff8c00;
+}
+
+.sort-filter{
+    display: inline-block;
+    float: right;
+}
+
+@media (max-width:991px) {
+    .wrapper-content-left{
+        width: 100%;
+        margin-bottom: 2rem;
+    }
     #carouselExampleControls {
         height: 96px;
     }
@@ -293,6 +334,7 @@ a.bg-warning:focus, a.bg-warning:hover, button.bg-warning:focus, button.bg-warni
         border-right: none!important;
     }
 }
+
 @media (min-width:1300px) {
     .container {
         max-width: 1280px
